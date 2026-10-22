@@ -33,9 +33,10 @@ data_reduced = data[['drive-wheels', 'body-style', 'price']]
 # Group by drive wheels and body style, then calculate mean price
 grouped_data = data_reduced.groupby(['drive-wheels', 'body-style']).mean()
 print(grouped_data)
-Creating Pivot Tables with pivot
 
 """
+Creating Pivot Tables with pivot
+
 Pivot tables display one variable along rows and another along columns.
 This format is easier to read and visualize.
 Example: Pivot the grouped data
